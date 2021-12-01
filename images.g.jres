@@ -1,0 +1,12 @@
+{
+    "E9xNY:%6]Yd%oui@qk=7": {
+        "data": "hwQMAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAAAABm9gYGAAAAAPYWBmYAAAAAZvYGYAAAAABmFmZmAAAAAPb2BgAAAAAAZvYGAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "ZombieSnake"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}

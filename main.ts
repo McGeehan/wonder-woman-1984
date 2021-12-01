@@ -1,0 +1,21 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile1`, function (sprite, location) {
+    info.changeScoreBy(-1)
+    music.knock.play()
+    tiles.setTileAt(location, assets.tile`transparency16`)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
+    info.changeScoreBy(1)
+    music.jumpUp.play()
+    tiles.setTileAt(location, assets.tile`transparency16`)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles8, function (sprite, location) {
+    game.over(true)
+})
+let mySprite = sprites.create(assets.image`ZombieSnake`, SpriteKind.Player)
+controller.moveSprite(mySprite, 150, 150)
+scene.setBackgroundColor(12)
+tiles.setTilemap(tilemap`level1`)
+tiles.placeOnRandomTile(mySprite, sprites.builtin.forestTiles0)
+scene.cameraFollowSprite(mySprite)
+info.startCountdown(20)
+info.setScore(0)
